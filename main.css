@@ -1,0 +1,169 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   font-family: 'Josefin Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+   
+}
+
+.container {
+    width: 375px;
+    margin: auto;
+    background-color: white;
+    
+}
+
+.logo {
+    width: 120px;
+}
+
+nav {
+    background: white;
+    padding: 2em 2em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-1 {
+    padding: 4em 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background-image: url(./images/bg-pattern-desktop.svg);
+}
+
+h1 {
+    font-size: 3.2em;
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+    letter-spacing: 15px;
+}
+
+span {
+    font-weight: 400;
+    color: black;
+}
+
+.content-p {
+    font-size: 1em;
+    line-height: 1.8;
+    color: hsl(0, 36%, 70%); 
+}
+
+.button-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+input {
+    border: none;
+    padding: 1.4em;
+    width: 100%;
+    border: 3px solid hsl(0, 36%, 70%);
+    color: hsl(0, 36%, 70%);
+    border-radius: 40px;
+}
+
+::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+
+input:focus {
+    outline: none;
+}
+
+.arrow {
+    background-color: hsl(0, 93%, 68%);
+    padding: 1.1em 2em;
+    border-radius: 40px;
+    margin-left: -4em;
+    border: 2px solid hsl(0, 36%, 70%);
+}
+
+.desktop {
+    display: none;
+}
+
+
+@media only screen and (max-width: 374px) {
+    h1 {
+        font-size: 2.1em;
+    }
+    .mobile {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .container {
+        width: 375px;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (min-width: 760px) {
+    .container-1 {
+        width: 760px;
+        margin: 0 auto;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .desktop-2 {
+        display: flex;
+        /* flex: 0 0 20%; */
+        text-align: left;
+        margin: 9em 0;
+    }
+
+    .content-1 {
+        background: none;
+        text-align: left;
+        padding: 3em 6em;
+        flex: 0 0 68%;
+        background-image: url(./images/bg-pattern-desktop.svg);
+    }
+
+    .bg-desktop {
+        width: 32%;
+    }
+
+    h1 {
+       padding-top: 1em; 
+       font-size: 2em;
+    }
+
+    .content-p {
+        font-size: 0.8em;
+    }
+
+    input {
+        padding: 1em;
+        border: 2px solid hsl(0, 36%, 70%);
+    }
+    
+    .arrow {
+        padding: 0.6em 2em;
+        border: 3px solid hsl(0, 36%, 70%);
+    }
+}
+
